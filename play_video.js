@@ -22,11 +22,20 @@ function onVideoLoad() {
    ySpeed[i] = random(-0.1,0.3);
    
   videoElement[i] = createVideo(['video/video_3.mp4']); 
+  
+  videoElement[i].elt.setAttribute('autoplay', "");
+  videoElement[i].elt.setAttribute('loop', "");
+  videoElement[i].elt.setAttribute('muted', "");
+  //videoElement[i].elt.setAttribute('playsinline', "");
+  videoElement[i].elt.setAttribute('webkit-playsinline', "");
+  
   videoElement[i].position(x[i], y[i], 'fixed');
-  videoElement[i].autoplay();
-  videoElement[i].loop();
+  //videoElement[i].autoplay();
+  //videoElement[i].loop();
   videoElement[i].volume(0);
   videoElement[i].size(windowWidth/50, windowWidth/50);
+  //videoElement[i].elt.setAttribute('width', windowWidth/20);
+  //videoElement[i].elt.setAttribute('volume', '0');
   
   }
 }
