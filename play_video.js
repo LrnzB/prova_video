@@ -26,7 +26,7 @@ function onVideoLoad() {
   videoElement[i].elt.setAttribute('autoplay', "");
   videoElement[i].elt.setAttribute('loop', "");
   videoElement[i].elt.setAttribute('muted', "");
-  //videoElement[i].elt.setAttribute('playsinline', "");
+  videoElement[i].elt.setAttribute('playsinline', "");
   videoElement[i].elt.setAttribute('webkit-playsinline', "");
   
   videoElement[i].position(x[i], y[i], 'fixed');
